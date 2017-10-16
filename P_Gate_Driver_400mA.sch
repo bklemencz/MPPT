@@ -28,12 +28,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:BK_Common
 LIBS:MPPT-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -129,10 +130,10 @@ Connection ~ 4900 2000
 Wire Wire Line
 	5400 2500 5400 2700
 $Comp
-L GND #PWR?
+L GND #PWR01
 U 1 1 59DF9916
 P 5400 3200
-F 0 "#PWR?" H 5400 2950 50  0001 C CNN
+F 0 "#PWR01" H 5400 2950 50  0001 C CNN
 F 1 "GND" H 5400 3050 50  0000 C CNN
 F 2 "" H 5400 3200 50  0000 C CNN
 F 3 "" H 5400 3200 50  0000 C CNN

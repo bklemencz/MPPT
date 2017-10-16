@@ -1,0 +1,345 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BK_Common
+LIBS:MPPT-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MC34063 U?
+U 1 1 59E45AC3
+P 5600 3350
+F 0 "U?" H 5750 3700 50  0000 L CNN
+F 1 "MC34063" H 5700 3000 50  0000 L CNN
+F 2 "" H 5600 3350 50  0000 C CNN
+F 3 "" H 5600 3350 50  0000 C CNN
+	1    5600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Cer_SMD_0805 C?
+U 1 1 59E45B72
+P 4650 3650
+F 0 "C?" H 4660 3720 50  0000 L CNN
+F 1 "220p" H 4660 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4650 3500 50  0001 C CNN
+F 3 "" H 4650 3650 50  0000 C CNN
+	1    4650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3500 4650 3500
+Wire Wire Line
+	4650 3500 4650 3550
+Wire Wire Line
+	4650 3750 4650 4050
+$Comp
+L GND #PWR02
+U 1 1 59E45C33
+P 5600 4150
+F 0 "#PWR02" H 5600 3900 50  0001 C CNN
+F 1 "GND" H 5600 4000 50  0000 C CNN
+F 2 "" H 5600 4150 50  0000 C CNN
+F 3 "" H 5600 4150 50  0000 C CNN
+	1    5600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_SMD_0805 R?
+U 1 1 59E45C44
+P 4650 2800
+F 0 "R?" H 4700 2850 50  0000 L CNN
+F 1 "0.75" H 4700 2750 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4700 2650 50  0001 C CNN
+F 3 "" H 4650 2800 50  0000 C CNN
+	1    4650 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_SMD_0805 R?
+U 1 1 59E45CAC
+P 4750 2800
+F 0 "R?" H 4600 2850 50  0000 L CNN
+F 1 "0.75" H 4550 2750 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4800 2650 50  0001 C CNN
+F 3 "" H 4750 2800 50  0000 C CNN
+	1    4750 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 3200 4750 3200
+Wire Wire Line
+	4650 2650 4650 2700
+Wire Wire Line
+	4200 2650 5600 2650
+Wire Wire Line
+	4750 2650 4750 2700
+Wire Wire Line
+	5600 2650 5600 2850
+Connection ~ 4750 2650
+Wire Wire Line
+	4750 2900 4750 2950
+Wire Wire Line
+	4650 2950 5250 2950
+Wire Wire Line
+	4650 2900 4650 3200
+Connection ~ 4650 2950
+Wire Wire Line
+	6500 3250 6450 3250
+Wire Wire Line
+	6500 2800 6500 3250
+Wire Wire Line
+	6500 3150 6450 3150
+Wire Wire Line
+	5250 2950 5250 2800
+Wire Wire Line
+	5250 2800 6500 2800
+Connection ~ 6500 3150
+Connection ~ 4750 2950
+$Comp
+L SS14 D?
+U 1 1 59E4638A
+P 6950 3600
+F 0 "D?" H 6900 3680 50  0000 L CNN
+F 1 "SS14" H 6850 3500 50  0000 L CNN
+F 2 "Diodes_SMD:SMA_Standard" H 7000 3400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88746/ss12.pdf" H 7000 3300 50  0001 C CNN
+	1    6950 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L IND_SMD_UNSH_CD_54 L?
+U 1 1 59E463DD
+P 7450 3400
+F 0 "L?" H 7450 3500 50  0000 C CNN
+F 1 "100u" H 7450 3350 50  0000 C CNN
+F 2 "BK_Common:IND_SMD_CD54" H 7450 3250 50  0001 C CNN
+F 3 "" H 7450 3400 50  0000 C CNN
+	1    7450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3400 7200 3400
+Wire Wire Line
+	6950 3500 6950 3400
+Connection ~ 6950 3400
+Wire Wire Line
+	6950 4050 6950 3700
+$Comp
+L R_SMD_0805 R?
+U 1 1 59E46559
+P 7450 3150
+F 0 "R?" H 7300 3200 50  0000 L CNN
+F 1 "13k" H 7250 3100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7500 3000 50  0001 C CNN
+F 3 "" H 7450 3150 50  0000 C CNN
+	1    7450 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R_SMD_0805 R?
+U 1 1 59E465FA
+P 6550 3700
+F 0 "R?" H 6400 3750 50  0000 L CNN
+F 1 "2.4k" H 6350 3650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6600 3550 50  0001 C CNN
+F 3 "" H 6550 3700 50  0000 C CNN
+	1    6550 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3550 6550 3550
+Wire Wire Line
+	6550 3150 6550 3600
+Wire Wire Line
+	6550 3150 7350 3150
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 4050 6550 3800
+Wire Wire Line
+	7700 3400 8550 3400
+Wire Wire Line
+	7550 3150 7800 3150
+Wire Wire Line
+	7800 3150 7800 3400
+Connection ~ 7800 3400
+$Comp
+L C_Cer_SMD_1206 C?
+U 1 1 59E467C8
+P 7950 3650
+F 0 "C?" H 7960 3720 50  0000 L CNN
+F 1 "10u" H 7960 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7950 3500 50  0001 C CNN
+F 3 "" H 7950 3650 50  0000 C CNN
+	1    7950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Cer_SMD_1206 C?
+U 1 1 59E468BD
+P 8150 3650
+F 0 "C?" H 8160 3720 50  0000 L CNN
+F 1 "10u" H 8160 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8150 3500 50  0001 C CNN
+F 3 "" H 8150 3650 50  0000 C CNN
+	1    8150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3400 7950 3550
+Wire Wire Line
+	8150 3150 8150 3550
+Connection ~ 7950 3400
+Wire Wire Line
+	7950 4050 7950 3750
+Wire Wire Line
+	8150 4050 8150 3750
+$Comp
+L C_Cer_SMD_1206 C?
+U 1 1 59E46B92
+P 4300 2800
+F 0 "C?" H 4310 2870 50  0000 L CNN
+F 1 "10u" H 4310 2720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4300 2650 50  0001 C CNN
+F 3 "" H 4300 2800 50  0000 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2650 4300 2700
+Connection ~ 4650 2650
+$Comp
+L GND #PWR03
+U 1 1 59E46C67
+P 4300 3000
+F 0 "#PWR03" H 4300 2750 50  0001 C CNN
+F 1 "GND" H 4300 2850 50  0000 C CNN
+F 2 "" H 4300 3000 50  0000 C CNN
+F 3 "" H 4300 3000 50  0000 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2900 4300 3000
+Text HLabel 8250 3150 2    60   Input ~ 0
+8V
+Connection ~ 8150 3400
+Text HLabel 4200 2650 0    60   Input ~ 0
+VIN
+Connection ~ 4300 2650
+Wire Wire Line
+	4350 3600 4350 4050
+Wire Wire Line
+	4200 3600 4350 3600
+Text HLabel 4200 3600 0    60   Input ~ 0
+GND
+Wire Wire Line
+	8150 3150 8250 3150
+$Comp
+L AP1117D33 U?
+U 1 1 59E47259
+P 8850 3400
+F 0 "U?" H 8950 3150 50  0000 C CNN
+F 1 "AP1117D33" H 8850 3650 50  0000 C CNN
+F 2 "" H 8850 3400 50  0000 C CNN
+F 3 "" H 8850 3400 50  0000 C CNN
+	1    8850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Cer_SMD_0805 C?
+U 1 1 59E472FE
+P 8350 3650
+F 0 "C?" H 8360 3720 50  0000 L CNN
+F 1 "100n" H 8360 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8350 3500 50  0001 C CNN
+F 3 "" H 8350 3650 50  0000 C CNN
+	1    8350 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7950 4050
+Connection ~ 8150 4050
+Wire Wire Line
+	8350 4050 8350 3750
+Connection ~ 8350 4050
+Wire Wire Line
+	8350 3550 8350 3400
+Connection ~ 8350 3400
+Connection ~ 6950 4050
+Connection ~ 6550 4050
+Wire Wire Line
+	5600 3850 5600 4150
+Connection ~ 5600 4050
+Connection ~ 4650 4050
+Wire Wire Line
+	8850 4050 8850 3700
+Connection ~ 8850 4050
+$Comp
+L C_Cer_SMD_0805 C?
+U 1 1 59E47777
+P 9300 3650
+F 0 "C?" H 9310 3720 50  0000 L CNN
+F 1 "10u" H 9310 3570 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9300 3500 50  0001 C CNN
+F 3 "" H 9300 3650 50  0000 C CNN
+	1    9300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3400 9300 3400
+Wire Wire Line
+	9300 3150 9300 3550
+Wire Wire Line
+	9300 4050 9300 3750
+Connection ~ 9300 4050
+Text HLabel 9400 3150 2    60   Input ~ 0
+3V3
+Wire Wire Line
+	9300 3150 9400 3150
+Connection ~ 9300 3400
+Wire Wire Line
+	4350 4050 9300 4050
+Text Notes 4500 2550 0    60   ~ 0
+Ipk: 800mA
+Text Notes 3650 2550 0    60   ~ 0
+Vin Max: 40V\n
+$EndSCHEMATC

@@ -1,0 +1,22 @@
+Circuit: * \\HTPC\Project\MPPT\DOC\SIM\Buck_Low_Side_Curr_Sense\Buck_Low_Side_Curr_Sense_LM358.asc
+
+Per .tran options, skipping operating point for transient analysis.
+
+Date: Sun Oct 15 21:10:13 2017
+Total elapsed time: 15.608 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 614917
+traniter = 614917
+tranpoints = 163484
+accept = 119497
+rejected = 43987
+matrix size = 38
+fillins = 11
+solver = Normal
+Thread vector: 18.0/14.0[3] 7.7/4.9[3] 2.8/1.7[3] 0.3/0.8[1]  2592/500
+Matrix Compiler1: 2.91 KB object code size  1.8/1.2/[0.4]
+Matrix Compiler2: 3.56 KB object code size  0.8/1.7/[0.4]
+
